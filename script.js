@@ -8,8 +8,6 @@ function splitText(elem, tag = "span", interval = 0) {
     return;
   }
 
-  console.log("elem이 없을때 불필요한 연산 시작");
-
   const el = document.querySelector(elem);
   const el_text = el.innerText;
 
@@ -26,4 +24,4 @@ function splitText(elem, tag = "span", interval = 0) {
   el.innerHTML = resultText;
 }
 
-splitText("h1");
+splitText("h1", "span", 0.05);
